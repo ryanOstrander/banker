@@ -21,4 +21,4 @@ app.include_router(expenses.router)
 
 @app.get("/")
 async def root():
-    return {"status": "ok", "message
+    return {"status": "ok", "message": "SimpleBank API"}
