@@ -268,3 +268,22 @@ export default function Dashboard() {
                   <tr>
                     <td colSpan={5} style={{ textAlign: "right" }}>Total</td>
                     <td className="col-amount">{fmt(total)}</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            )}
+          </div>
+        </div>
+      </main>
+
+      {showForm && (
+        <ExpenseForm
+          expense={editingExpense}
+          onSave={handleSave}
+          onClose={() => { setShowForm(false); setEditingExpense(null); }}
+        />
+      )}
+    </div>
+  );
+}
