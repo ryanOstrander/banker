@@ -19,6 +19,11 @@ app.include_router(users.router)
 app.include_router(expenses.router)
 
 
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "Expense Ledger API"}
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
