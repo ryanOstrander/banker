@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "expense-ledger-backend"
+name = "simplebank-backend"
 version = "0.1.0"
-description = "FastAPI backend for the Expense Ledger application"
+description = "FastAPI backend for the SimpleBank application"
 authors = []
 readme = "README.md"
 packages = [{include = "app"}]

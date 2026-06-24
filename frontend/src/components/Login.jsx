@@ -26,7 +26,7 @@ export default function Login({ onSwitch }) {
   return (
     <div className="auth-page">
       <div className="auth-card">
-        <h1>My Expense Ledger</h1>
+        <h1>SimpleBank</h1>
         <p className="subtitle">Keep track of every dollar, simply.</p>
 
         {error && <div className="error-msg">{error}</div>}

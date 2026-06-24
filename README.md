@@ -1,4 +1,4 @@
-# My Expense Ledger
+# SimpleBank
 
 A simple, accessible expense tracking application designed for people who prefer managing their spending in a familiar spreadsheet-like format. Built with cash and check users in mind.
 
@@ -62,7 +62,7 @@ make reset       # Clean + rebuild + start
 ## Project Structure
 
 ```
-expense-ledger/
+Banker/
 ├── docker-compose.yml
 ├── Makefile
 ├── backend/

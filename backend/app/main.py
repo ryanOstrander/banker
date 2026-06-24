@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import users, expenses
 
-app = FastAPI(title="Expense Ledger", version="1.0.0")
+app = FastAPI(title="SimpleBank", version="1.0.0")
 
 origins = os.environ.get("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
 
@@ -21,9 +21,4 @@ app.include_router(expenses.router)
 
 @app.get("/")
 async def root():
-    return {"status": "ok", "message": "Expense Ledger API"}
-
-
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
+    return {"status": "ok", "message

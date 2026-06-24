@@ -1,5 +1,5 @@
 {
-  "name": "expense-ledger-frontend",
+  "name": "simplebank-frontend",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
